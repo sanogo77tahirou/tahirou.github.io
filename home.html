@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-layout-decorate="~{fragment/layouthome}">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+       <meta name="viewport" content="width=device-width">
+   	
+</head>
+<body >
+<!-- page content -->
+<div class="right_col" role="main" data-layout-fragment="content" >
+	<div class="" >
+		<center>
+			</br>
+			
+						<div class="clearfix"></div>
+			<br>
+			<br>
+			
+			<table id="regForm" width="100%" border="1">
+
+				<tr heigth="5px" >
+					<th colspan="3"  padding="5px" style = "background-color: #ff6f00; margin-top:5px;">
+						<font color="black">
+							<center>Base PMT</center>
+						</font>
+					</th>
+				</tr>
+				<tr >
+					<td width="50%">
+						<center>
+							<table class="table table-striped table-bordered" width="95%">
+								<thead>
+
+								<tr heigth="5px" bgcolor="Green" >
+									
+								</tr>
+
+								</thead>
+								<tbody>
+								<tr heigth=2% th:each="sigIndicateurCleView,iterStat:${allSigIndicateurCleRsuView}">
+									
+								</tr>
+								</tbody>
+							</table>
+						</center>
+					</td>
+					<tr><td></td></tr>
+					<td width="50%" >
+						<!--<div id="resultat_rech">
+                            <div style="width:95%;">
+                                <canvas id="canvas"></canvas>
+                            </div>
+                        </div>-->
+
+						<div class="x_panel">
+							<div class="x_content">
+
+								<div id="mainb" th:href="@{/}" style="height:350px;"></div>
+
+							</div>
+						</div>
+	
+					</td>
+
+				</tr>
+
+				<tr>
+						<td colspan="3">	
+						</br>				
+							<center>
+								<table class="table table-striped table-bordered" width="90%">
+									<thead>
+										<tr heigth="5px" class="success">
+											 <th colspan="9"  padding="5px" style = "background-color: #ff6f00; margin-top:5px;">
+											 	<font color="black">
+											 		<center>Bénéficiaires PFSP</center>
+											 	</font>
+											 </th>
+										</tr>									
+										<tr  bgcolor="Green" >
+											 
+											 <th><font color="white"><center>Phase</center></font></th>	
+											 											 
+											</tr>
+
+									</thead>
+									<tbody>
+										<tr heigth=2% th:each="sigIndicateurCleBenefView,iterStat:${allSigIndicateurCleBenefView}" valign="bottom">
+										    
+										  </tr>
+									</tbody>
+
+							</table>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</div>
+</div>
+<!-- /page content -->
+</body>
+</html>

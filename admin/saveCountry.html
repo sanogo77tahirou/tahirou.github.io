@@ -1,0 +1,70 @@
+<!DOCTYPE html >
+<html lang="en">    
+    
+    <head>
+		
+	</head>
+
+	<body class="nav-md">
+    
+        <!-- page content -->
+        <div class="right_col" >
+			<div class="">
+				<div class="clearfix"></div>
+
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="x_panel">
+							<div class="x_title">
+								<b><font color="orange" size="5"><center>CREATION D'UN PAYS</center></font></b>
+								<ul class="nav navbar-right panel_toolbox">
+									<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+									</li>
+								</ul>  
+								<div class="clearfix"></div>
+							</div>
+							<div class="x_content">
+								<form class="form-horizontal form-label-left " th:object="${Country}" th:action="@{/admin/Country/add}" method="post"    novalidate>
+									
+									<div class="item form-group">
+										<label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Code  <span class="required">*</span>
+										</label>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<input id="name" class="form-control col-md-7 col-xs-12"  name="name" placeholder="Code Boulangerie" required="required" type="text" th:field="*{id}">
+										</div>
+									</div>
+									<div class="item form-group">
+										<label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Nom  <span class="required">*</span>
+										</label>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<input id="name" class="form-control col-md-7 col-xs-12"  name="name" placeholder="Nom Client" required="required" type="text" th:field="*{name}">
+										</div>
+									</div>
+									<div class="item form-group">
+										<label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">capital <span class="required">*</span>
+										</label>
+										<div class="col-md-6 col-sm-6 col-xs-12">
+											<input id="name" class="form-control col-md-7 col-xs-12"  name="name" placeholder="capital" required="required" type="text" th:field="*{capital}">
+										</div>
+									</div>
+									<div class="ln_solid"></div>
+									<div class="alert alert-warning alert-dismissible fade in" style="background-color: Gainsboro; align: center" >
+                                        <center>
+											<a class="btn btn-warning" th:href="@{/admin/Country}">Retour</a>
+											<a class="btn btn-default" th:href="@{/admin/Country/add}">Annuler</a>
+										    <button id="send" type="submit" class="btn btn-success">Enregistrer</button>
+										</center>
+
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <!-- /page content -->
+
+ 
+	</body>
+</html>
